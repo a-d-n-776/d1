@@ -39,14 +39,15 @@ steps:
       echo 'Hello world to check file directory'
       pwd
       ls
+
+      sudo apt-get install tree -y
+      sudo tree
+      echo ' current dir below find '
+      pwd
       echo ' files under this location webapp/target '
       cd webapp/target
       ls
-      #mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
-      sudo apt-get install tree -y
-      sudo tree
-      echo pwd
-      pwd
+      mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
       cd $(Build.ArtifactStagingDirectory)
       pwd
       ls
