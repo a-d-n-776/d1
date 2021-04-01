@@ -39,6 +39,8 @@ steps:
       echo 'Hello world to check file directory'
       pwd
       ls
+      cd home/vsts/work/1/a/webapp/target
+      ls
       sudo apt-get install tree -y
       sudo tree
       echo pwd
