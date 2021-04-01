@@ -29,3 +29,14 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
+- task: Bash@3
+  displayName: ' tree  '
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world to check file directory'
+      ls
+      sudo apt-get install tree -y
+      sudo tree
