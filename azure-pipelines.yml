@@ -53,7 +53,7 @@ steps:
       ls
       pwd
 
-      mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
+      #mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
       cd $(Build.ArtifactStagingDirectory)
       tree
       pwd
@@ -61,5 +61,5 @@ steps:
 
       cd $(Build.ArtifactStagingDirectory)/naveen
       pwd
-      ls
+      ls -lt
       
