@@ -55,6 +55,7 @@ steps:
 
       mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
       cd $(Build.ArtifactStagingDirectory)
+      tree
       pwd
       ls
 
