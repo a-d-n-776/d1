@@ -39,7 +39,7 @@ steps:
       echo 'Hello world to check file directory'
       pwd
       ls
-      echo ' webapp/target '
+      echo ' files under this location webapp/target '
       cd webapp/target
       ls
       sudo apt-get install tree -y
@@ -53,4 +53,5 @@ steps:
       ls
       cd $(Build.ArtifactStagingDirectory)/naveen
       pwd
+      ls
       
