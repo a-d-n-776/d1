@@ -41,3 +41,8 @@ steps:
       ls
       sudo apt-get install tree -y
       sudo tree
+      echo pwd
+      pwd
+      cd $(Build.ArtifactStagingDirectory)
+      pwd
+      ls
