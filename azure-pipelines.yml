@@ -46,4 +46,8 @@ steps:
       cd $(Build.ArtifactStagingDirectory)
       pwd
       ls
-      find / -option .war
+      mkdir $(Build.ArtifactStagingDirectory)/naveen
+      ls
+      cd $(Build.ArtifactStagingDirectory)/naveen
+      ls
+      
