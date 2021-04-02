@@ -52,7 +52,7 @@ steps:
       mkdir $(Build.ArtifactStagingDirectory)/naveen
       #mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
       cd $(Build.ArtifactStagingDirectory)/naveen
-      sudotree
+      sudo tree
       echo ' files under $(Build.ArtifactStagingDirectory)/naveen '
       pwd
       ls -lt
