@@ -50,7 +50,7 @@ steps:
       ls
       
       mkdir $(Build.ArtifactStagingDirectory)/naveen
-      #mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
+      mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
       cd $(Build.ArtifactStagingDirectory)/naveen
       sudo tree
       echo ' files under $(Build.ArtifactStagingDirectory)/naveen '
