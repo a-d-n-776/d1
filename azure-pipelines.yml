@@ -42,24 +42,18 @@ steps:
 
       sudo apt-get install tree -y
       sudo tree
+
       echo ' current dir below find1 '
       pwd
       echo ' files under this location webapp/target '
       cd webapp/target
       ls
+      
       mkdir $(Build.ArtifactStagingDirectory)/naveen
-      echo ' files under $(Build.ArtifactStagingDirectory)/naveen '
-      echo ' current file & dir  below find2 '
-      ls
-      pwd
-
       #mv webapp.war $(Build.ArtifactStagingDirectory)/naveen
-      cd $(Build.ArtifactStagingDirectory)
-      tree
-      pwd
-      ls
-
       cd $(Build.ArtifactStagingDirectory)/naveen
+      sudotree
+      echo ' files under $(Build.ArtifactStagingDirectory)/naveen '
       pwd
       ls -lt
       
